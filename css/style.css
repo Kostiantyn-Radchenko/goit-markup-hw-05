@@ -36,6 +36,8 @@ font-family: 'Roboto', sans-serif;
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --portofolio-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
+  --modal-btn-border-color: rgba(0, 0, 0, 0.1);
 }
 /* tag configuration */
 li {
@@ -115,6 +117,7 @@ body {
 }
 
 .pagination .link {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -126,6 +129,17 @@ body {
 .pagination .link:hover,
 .pagination .link:focus {
   color: var(--active-color);
+}
+.pagination .link.current:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  border-radius: 2px;
+  background-color: var(--active-color);
 }
 .pagination .link.current {
   color: var(--active-color);
@@ -541,4 +555,47 @@ body {
 }
 .portofolio-item:hover {
   box-shadow: var(--portofolio-card-shadow);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--modal-overlay-color);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: var(--card-shadow);
+  background-color: var(--white-text-color);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.closed-btn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--modal-btn-border-color);
+  color: var(--logo-primary-color);
+  background-color: var(--white-text-color);
+}
+.modal-icon {
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
 }
