@@ -140,6 +140,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pagination .link:hover,
 .pagination .link:focus {
@@ -176,6 +177,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -325,16 +327,15 @@ body {
 .container.work .title {
   margin-bottom: 50px;
 }
-.description {
+
+.description-text {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 27px 82px;
-  background-color: var(--hero-overline-color);
-}
-.description-text {
   color: var(--white-text-color);
+  background-color: var(--hero-overline-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -386,6 +387,7 @@ body {
   max-height: 44px;
   padding: 12px;
   color: var(--svg-accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -429,6 +431,7 @@ body {
   color: var(--svg-accent-color);
   border: 1px solid var(--svg-accent-color);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -463,6 +466,7 @@ body {
 }
 .footer .link {
   color: var(--contacts-footer-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .link:hover,
 .footer .link:focus {
@@ -499,6 +503,7 @@ body {
   color: var(--white-text-color);
   background-color: var(--footer-social-bkg);
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -536,6 +541,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--teams-bkg-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portofolio-section .btn:hover,
