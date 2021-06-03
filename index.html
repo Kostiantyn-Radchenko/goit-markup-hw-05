@@ -68,7 +68,7 @@
       <!-- our soft skills -->
       <section class="section">
         <div class="container">
-          <h2 hidden>our soft skills</h2>
+          <h2 class="visually-hidden">our soft skills</h2>
           <ul class="featurse">
             <li class="item">
               <div class="featurse-card-icon">
@@ -135,13 +135,22 @@
                 alt="foto keyboard"
                 width="370"
               />
+              <div class="description">
+                <p class="description-text">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="item">
               <img src="./images/laptop.jpg" alt="foto laptop" width="370" />
+              <div class="description">
+                <p class="description-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/tablet.jpg" alt="foto tablet" width="370" />
+              <div class="description">
+                <p class="description-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -451,8 +460,8 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="closed-btn" type="button" data-modal-close>
-          <svg class="modal-icon">
+        <button class="modal-btn btn" type="button" data-modal-close>
+          <svg class="closed-icon">
             <use href="./images/icon.svg#closed-icon"></use>
           </svg>
         </button>
