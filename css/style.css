@@ -25,10 +25,10 @@ font-family: 'Roboto', sans-serif;
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-border-radius: 0px 0px 4px 4px;
   --card-border-color: #eeeeee;
-  --teams-bkg-color: #f5f4fa;
   --hero--bgc-color: #c4c4c4;
   --hero-overline-color: rgba(47, 48, 58, 0.4);
-  --bkg-soft-color: #f5f4fa;
+  --work-overline-color: rgba(47, 48, 58, 0.8);
+  --primari-bkg-color: #f5f4fa;
   --svg-accent-color: #afb1b8;
   --footer-social-bkg: rgba(255, 255, 255, 0.1);
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -305,7 +305,7 @@ body {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--bkg-soft-color);
+  background-color: var(--primari-bkg-color);
   color: var(--title-color);
 }
 .featurse-icon {
@@ -333,7 +333,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 27px 82px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--white-text-color);
   background-color: var(--hero-overline-color);
   font-weight: 700;
@@ -343,7 +346,7 @@ body {
 }
 /* teams section */
 .section.teams {
-  background-color: var(--teams-bkg-color);
+  background-color: var(--primari-bkg-color);
 }
 .container.teams .title {
   margin-bottom: 50px;
